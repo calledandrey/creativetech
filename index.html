@@ -23,7 +23,24 @@
             padding: 2rem;
         }
         .product {
+            display: flex;
+            align-items: center;
             margin-bottom: 2rem;
+        }
+        .product-icon {
+            width: 64px;
+            height: 64px;
+            margin-right: 1rem;
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden;
+        }
+        .product-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio and cover entire container */
+        }
+        .product-info {
+            flex: 1; /* Take available width */
         }
         .product-title {
             font-size: 24px;
@@ -50,22 +67,42 @@
     <div class="container">
         <h2>Our Products</h2>
         <div class="product">
-            <h3 class="product-title"><a href="https://apps.apple.com/app/id1477345602">Habit Tracker</a></h3>
-            <p class="product-description">Develop positive habits and track your progress effortlessly with our Habit Tracker app. Set goals, receive reminders, and celebrate your achievements as you build a better you.</p>
+            <div class="product-icon">
+                <img src="habit.png" alt="Habit Tracker Icon">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title"><a href="https://apps.apple.com/app/id1477345602">Habit Tracker</a></h3>
+                <p class="product-description">Develop positive habits and track your progress effortlessly with our Habit Tracker app. Set goals, receive reminders, and celebrate your achievements as you build a better you.</p>
+            </div>
         </div>
         <div class="product">
-            <h3 class="product-title"><a href="https://itunes.apple.com/us/app/id1440323599">Drink Water Reminder</a></h3>
-            <p class="product-description">Stay hydrated and boost your wellness with our Drink Water Reminder app. Receive timely reminders to ensure you're getting the right amount of water daily.</p>
+            <div class="product-icon">
+                <img src="water.png" alt="Drink Water Reminder Icon">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title"><a href="https://itunes.apple.com/us/app/id1440323599">Drink Water Reminder</a></h3>
+                <p class="product-description">Stay hydrated and boost your wellness with our Drink Water Reminder app. Receive timely reminders to ensure you're getting the right amount of water daily.</p>
+            </div>
         </div>
         <div class="product">
-            <h3 class="product-title"><a href="https://apps.apple.com/us/app/id1464518826">Quit Smoking Tracker</a></h3>
-            <p class="product-description">Kick the smoking habit for good with our Quit Smoking Tracker app. Monitor your progress, celebrate milestones, and regain control of your health.</p>
+            <div class="product-icon">
+                <img src="smoke.png" alt="Quit Smoking Tracker Icon">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title"><a href="https://apps.apple.com/us/app/id1464518826">Quit Smoking Tracker</a></h3>
+                <p class="product-description">Kick the smoking habit for good with our Quit Smoking Tracker app. Monitor your progress, celebrate milestones, and regain control of your health.</p>
+            </div>
         </div>
         <div class="product">
-            <h3 class="product-title"><a href="https://apps.apple.com/us/app/id1575878213">Affirmations — Daily Motivation</a></h3>
-            <p class="product-description">Start your day on a positive note with our Affirmations app. Get daily motivational affirmations to inspire and uplift your spirits.</p>
+            <div class="product-icon">
+                <img src="aff.png" alt="Affirmations Icon">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title"><a href="https://apps.apple.com/us/app/id1575878213">Affirmations — Daily Motivation</a></h3>
+                <p class="product-description">Start your day on a positive note with our Affirmations app. Get daily motivational affirmations to inspire and uplift your spirits.</p>
+            </div>
         </div>
-        <h2>Why Choose Creative Technologies?</h2>
+        <h2>Our Values</h2>
         <ul>
             <li>Innovative Solutions: We are committed to creating apps that leverage the latest technologies and trends to provide the best user experience.</li>
             <li>Health and Productivity Focus: Our apps are designed to help you lead a healthier and more productive life. We understand the importance of these aspects in today's fast-paced world.</li>
